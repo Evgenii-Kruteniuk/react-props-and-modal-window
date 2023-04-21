@@ -1,0 +1,58 @@
+.wrapper {
+  width: 50%;
+  background-color: rgb(193, 204, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0px;
+  border: 3px solid black;
+}
+
+.wrapper img {
+  width: 60%;
+  height: 40%;
+}
+.wrapper button {
+  margin: 20px;
+  width: 10vw;
+  height: 5vh;
+  background-color: rgb(255, 179, 0);
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+.btnClose {
+  margin: 20px;
+  background-color: rgb(255, 179, 0);
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+
+.modal-window-wrapper {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(41, 40, 40, 0.524);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-hide .modal-window {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.modal-window {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 4s;
+}
