@@ -24,18 +24,21 @@ class Film extends Component {
   render() {
     return (
       <div className="wrapper">
-        <h1>{this.props.name}</h1>
-        <img src={this.props.src} alt={this.props.name} />
-        <p>Режиссер фильма: {this.props.produser}</p>
-        <p>Год выхода фильма: {this.props.year}</p>
-        <p>Цена:{this.props.price}</p>
-        {this.props.likeFilm ? (
-          <p>Это мой любимый фильм. Рекомендую!!</p>
-        ) : null}
-        <button onClick={this.openModal}>Купить</button>
+        
+        <div className="wrapper__item">
+          <h1>{this.props.name}</h1>
+          <img src={this.props.src} alt={this.props.name} />
+          <p>Режиссер фильма: {this.props.produser}</p>
+          <p>Год выхода фильма: {this.props.year}</p>
+          <p>Цена:{this.props.price}</p>
+          {this.props.likeFilm ? (
+            <p>Это мой любимый фильм. Рекомендую!!</p>
+          ) : null}
+          <button onClick={this.openModal}>Купить</button>
+        </div>
 
         <div
-          className={`modal - window - wrapper ${
+          className={`modal-window-wrapper ${
             this.state.isShow ? null : "modal-hide"
           }`}
         >

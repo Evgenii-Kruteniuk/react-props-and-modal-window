@@ -1,5 +1,13 @@
 .wrapper {
-  width: 50%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper__item {
+  width: 50vw;
   background-color: rgb(193, 204, 255);
   display: flex;
   flex-direction: column;
@@ -10,24 +18,14 @@
 
 .wrapper img {
   width: 60%;
-  height: 40%;
 }
 .wrapper button {
-  margin: 20px;
-  width: 10vw;
-  height: 5vh;
+  margin: 30px;
   background-color: rgb(255, 179, 0);
   font-size: 25px;
   font-weight: 700;
   border-radius: 30px;
-}
-
-.btnClose {
-  margin: 20px;
-  background-color: rgb(255, 179, 0);
-  font-size: 25px;
-  font-weight: 700;
-  border-radius: 30px;
+  padding: 15px 20px;
 }
 
 .modal-window-wrapper {
@@ -47,12 +45,16 @@
 .modal-hide .modal-window {
   visibility: hidden;
   opacity: 0;
-  transform: scale(0.5);
+  transform: scale(0.4) translateY(-100px);
 }
 .modal-window {
-  width: 400px;
+  border: 3px solid red;
+  padding-top: 30px;
+  background-color: rgb(252, 233, 105);
+  width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 4s;
+  align-items: center;
+  transition: 3s;
 }
